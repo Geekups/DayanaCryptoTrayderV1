@@ -30,3 +30,15 @@ def hello_world():
     analyze_and_visualize(dollar_price_in_iran)
 
 hello_world()
+
+
+
+# This code does the following:
+
+#     Fetches the current dollar price in Iran using the get_dollar_price_in_iran function.
+#     Prints the fetched price.
+#     Calls the analyze_and_visualize function to plot the price over time. For simplicity, it uses the current date and time as the date for the plot.
+
+# Please note, the API URL used in the get_dollar_price_in_iran function is just an example. You might need to find a reliable source for real-time dollar prices in Iran, as the availability and accuracy of such data can vary.
+
+# This integration should replace the placeholder "Hello, world!" message with real functionality, fetching and displaying real-time dollar prices in Iran along with a simple plot.
