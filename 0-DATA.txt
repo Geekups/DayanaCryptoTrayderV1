@@ -1,0 +1,4 @@
+1.
+hi. i want to write a python code. with admin(user) pannel. I want to run this app on kali linux, for now. bot in future it will be an api that sends data to people on the web. 
+so, this is the plan: 
+I want to build 6 version of this app, step by step, and you baby gonna help me in that. now for version1 of "DayanaCryptoTrader" (that is the app name, be carefull she is very sensitive)  we gonna work just on "tether to persian Toman", just this. you know we can use the real time dollar price in iran, for start, then maybe in version 5 and 6 we use economy and politic analyzes and their effect on dollar price. but for now we can just get the free data from other people and robots and models, as we can and give the user some choices with charts using pandas, numpy and ofcurse matplotlib. but remember if you have any better idea, Im all ears. just be carefull, I dont wanna 
