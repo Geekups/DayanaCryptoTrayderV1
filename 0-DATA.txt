@@ -1,7 +1,14 @@
 1.
-+ hi. i want to write a python code. with admin(user) pannel. I want to run this app on kali linux, for now. bot in future it will be an api that sends data to people on the web. 
++ hi. i want to write a python code. with admin(user) pannel. 
+I want to run this app on kali linux, for now. 
+but in future it will be an api that sends data to people on the web. 
 so, this is the plan: 
-I want to build 6 version of this app, step by step, and you baby gonna help me in that. now for version1 of "DayanaCryptoTrader" (that is the app name, be carefull she is very sensitive)  we gonna work just on "tether to persian Toman", just this. you know we can use the real time dollar price in iran, for start, then maybe in version 5 and 6 we use economy and politic analyzes and their effect on dollar price. but for now we can just get the free data from other people and robots and models, as we can and give the user some choices with charts using pandas, numpy and ofcurse matplotlib. but remember if you have any better idea, Im all ears. just be carefull, I dont wanna 
+I want to build 6 version of this app, step by step, 
+and you baby gonna help me in that. 
+now for version1 of "DayanaCryptoTrader" 
+(that is the app name, be carefull she is very sensitive)  
+we gonna work just on "tether to persian Toman", just this. 
+you know we can use the real time dollar price in iran, for start, then maybe in version 5 and 6 we use economy and politic analyzes and their effect on dollar price. but for now we can just get the free data from other people and robots and models, as we can and give the user some choices with charts using pandas, numpy and ofcurse matplotlib. but remember if you have any better idea, Im all ears. just be carefull, I dont wanna pay money for version 1 or 2. but I can spend a few boxes for version 3, if it gives me benefit. now, lets start, what should I do, what is in your mind?
 
 
 - To start building your "DayanaCryptoTrader" application, we'll focus on the first version, which will involve fetching real-time dollar prices in Iran and presenting them to the user with some basic analysis and visualization. This version will be designed to run on Kali Linux and will be a command-line interface (CLI) application. We'll use Python for the backend, leveraging libraries like requests for fetching data, pandas for data manipulation, numpy for numerical operations, and matplotlib for data visualization.
