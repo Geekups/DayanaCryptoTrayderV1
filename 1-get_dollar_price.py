@@ -18,25 +18,22 @@ def get_prices():
         # Assuming the prices are in elements with specific IDs or classes
         # You'll need to inspect the website to find the correct selectors
         dollar_price_element = soup.find(id='usdmax')
-        gold_price_element = soup.find(id='geram24')
         
-        if dollar_price_element and gold_price_element:
+        if dollar_price_element:
             # Extract the prices
             dollar_price = dollar_price_element.text
-            gold_price = gold_price_element.text
            
-            return dollar_price, gold_price # all prices are in "Rial"
+            return dollar_price # all prices are in "Rial"
         else:
             print("Failed to find price elements.")
-            return None, None
+            return None
     else:
         print("Failed to fetch page. Status code:", response.status_code)
-        return None, None
+        return None
 
 # Get the dollar and gold prices for the current time
-dollar_price, gold_price = get_prices()
-if dollar_price and gold_price:
+dollar_price = get_prices()
+if dollar_price:
     print("Dollar price in Rial:", dollar_price)
-    print("Gold price in Rial:", gold_price)
 else:
     print("Failed to fetch prices.")
