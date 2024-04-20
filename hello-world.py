@@ -1,13 +1,36 @@
-import requests
 import pandas as pd
 import matplotlib.pyplot as plt
+import requests
+from bs4 import BeautifulSoup
 
 def get_dollar_price_in_iran():
-    url = "https://api.exchangerate-api.com/v4/latest/USD" # Example API URL
-    response = requests.get(url)
-    data = response.json()
-    iran_rate = data['rates']['IRR'] # Assuming 'IRR' is the currency code for Iranian Toman
-    return iran_rate
+        # Placeholder website URL
+    url = "https://irarz.com/"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+            }
+    # Make a request to the website
+    response = requests.get(url , headers= headers)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the HTML content of the page
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # Assuming the prices are in elements with specific IDs or classes
+        # You'll need to inspect the website to find the correct selectors
+        dollar_price_element = soup.find(id='usdmax')
+        
+        if dollar_price_element:
+            # Extract the prices
+            dollar_price = dollar_price_element.text
+           
+            return dollar_price # all prices are in "Rial"
+        else:
+            print("Failed to find price elements.")
+            return None
+    else:
+        print("Failed to fetch page. Status code:", response.status_code)
+        return None
 
 def analyze_and_visualize(price):
     # For simplicity, we'll use the current date and time for the plot
